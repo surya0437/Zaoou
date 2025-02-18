@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 flex h-screen">
+
+    <!-- Button to toggle drawer -->
+    <button type="button" id="toggleDrawer" class="lg:hidden text-white focus:outline-none absolute top-5 left-5">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+    </button>
+
+    <!-- Overlay -->
+    <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden"></div>
+
+    <!-- Drawer -->
+    <div id="drawer" class="fixed top-0 left-0 h-full w-64 bg-white shadow-lg transform -translate-x-full transition-transform duration-300">
+        <div class="p-4 text-lg font-semibold">Info</div>
+        <ul class="space-y-4 px-4">
+            <li class="cursor-pointer">🏠 Dashboard</li>
+            <li class="cursor-pointer">🛒 E-commerce</li>
+            <li class="cursor-pointer">📌 Kanban <span class="bg-gray-300 text-xs px-2 py-1 rounded-md">Pro</span></li>
+            <li class="cursor-pointer">🛍️ Widgets</li>
+        </ul>
+    </div>
+
+    <script>
+        const toggleButton = document.getElementById('toggleDrawer');
+        const drawer = document.getElementById('drawer');
+        const overlay = document.getElementById('overlay');
+
+        function openDrawer() {
+            drawer.classList.remove('-translate-x-full');
+            overlay.classList.remove('hidden');
+        }
+
+        function closeDrawer() {
+            drawer.classList.add('-translate-x-full');
+            overlay.classList.add('hidden');
+        }
+
+        toggleButton.addEventListener('click', () => {
+            if (drawer.classList.contains('-translate-x-full')) {
+                openDrawer();
+            } else {
+                closeDrawer();
+            }
+        });
+
+        overlay.addEventListener('click', closeDrawer);
+    </script>
+
+</body>
+</html>

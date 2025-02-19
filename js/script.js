@@ -27,31 +27,6 @@ document.addEventListener("DOMContentLoaded", function () {
   scrollContainer.addEventListener("mouseleave", startScrolling);
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 document.querySelectorAll('.group').forEach(group => {
     const dropdown = group.querySelector('.dropdown');
     group.addEventListener('mouseenter', () => {
@@ -60,4 +35,22 @@ document.querySelectorAll('.group').forEach(group => {
     group.addEventListener('mouseleave', () => {
       dropdown.classList.remove('dropdown-enter-active');
     });
+  });
+
+
+  const fileInput = document.getElementById('fileInput');
+  const imagePreview = document.getElementById('imagePreview');
+  const placeholderIcon = document.getElementById('placeholderIcon');
+
+  fileInput.addEventListener('change', (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = () => {
+        imagePreview.src = reader.result;
+        imagePreview.classList.remove('hidden');
+        placeholderIcon.classList.add('hidden');
+      };
+      reader.readAsDataURL(file);
+    }
   });

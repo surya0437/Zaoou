@@ -1,105 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Animated Hover Dropdown Menu</title>
-    <style>
-        .dropdown-enter {
-            transform: translateY(-20px);
-            opacity: 0;
-        }
-
-        .dropdown-enter-active {
-            transform: translateY(0);
-            opacity: 1;
-            transition: all 300ms ease-in-out;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Form</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<body class="bg-gray-50 min-h-screen flex items-center justify-center p-4">
+  <form class="bg-white p-8 rounded-2xl shadow-lg w-full max-w-4xl">
+    <div class="flex flex-col items-center mb-8">
+      <div class="w-32 h-32 rounded-full bg-gray-200 flex items-center justify-center text-gray-500">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 16l4-4m0 0l4 4m-4-4v10M7 10v.01M17 10h.01M15 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+        </svg>
+      </div>
+      <label class="mt-2 text-gray-600">Upload image</label>
+      <input type="file" class="mt-2" />
+    </div>
 
-
-
-<body class="bg-gray-100">
-    <nav class="bg-[#121212] text-white py-4">
-        <div class="container mx-auto flex justify-center space-x-16 text-lg">
-            <div class="relative group">
-                <a href="#" class="hover:text-[#ed6140] font-semibold">Services</a>
-                <div
-                    class="absolute left-0 mt-2 hidden group-hover:flex flex-col bg-white rounded-lg shadow-lg p-4 space-y-4 dropdown">
-                    <div class="flex items-center space-x-3">
-                        <img src="https://via.placeholder.com/40" alt="Bike" class="w-10 h-10">
-                        <div>
-                            <p class="font-semibold">Bike</p>
-                            <p class="text-sm text-gray-500">Beat the Traffic, Save Time</p>
-                        </div>
-                    </div>
-                    <div class="flex items-center space-x-3">
-                        <img src="https://via.placeholder.com/40" alt="Car" class="w-10 h-10">
-                        <div>
-                            <p class="font-semibold">Car</p>
-                            <p class="text-sm text-gray-500">Travel in Comfort</p>
-                        </div>
-                    </div>
-                    <div class="flex items-center space-x-3">
-                        <img src="https://via.placeholder.com/40" alt="Parcel" class="w-10 h-10">
-                        <div>
-                            <p class="font-semibold">Parcel <span class="text-red-500 font-bold text-xs ml-1">NEW</span>
-                            </p>
-                            <p class="text-sm text-gray-500">Fast & Reliable Delivery</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="relative group">
-                <a href="#" class="hover:text-[#ed6140] font-semibold">Blogs</a>
-                <div
-                    class="absolute left-0 mt-2 hidden group-hover:flex flex-col bg-white rounded-lg shadow-lg p-4 space-y-4 dropdown">
-                    <p class="font-semibold">Latest Blog Posts</p>
-                    <p class="text-sm text-gray-500">Stay updated with new trends</p>
-                </div>
-            </div>
-
-            <div class="relative group">
-                <a href="#" class="hover:text-[#ed6140] font-semibold">Help</a>
-                <div
-                    class="absolute left-0 mt-2 hidden group-hover:flex flex-col bg-white rounded-lg shadow-lg p-4 space-y-4 dropdown">
-                    <p class="font-semibold">Support Center</p>
-                    <p class="text-sm text-gray-500">We are here to assist you</p>
-                </div>
-            </div>
-
-            <div class="relative group">
-                <a href="#" class="hover:text-[#ed6140] font-semibold">More</a>
-                <div
-                    class="absolute left-0 mt-2 hidden group-hover:flex flex-col bg-white rounded-lg shadow-lg p-4 space-y-4 dropdown">
-                    <p class="font-semibold">Explore More Options</p>
-                    <p class="text-sm text-gray-500">Discover additional features</p>
-                </div>
-            </div>
-
-            <button
-                class="outline-solid border-2 text-white px-5 py-2 rounded-lg hover:bg-[#ed6140] font-semibold flex items-center space-x-2">
-                <img src="image/install-phone.svg" alt="Download Icon" class="w-6 h-6">
-                <span>Download App</span>
-            </button>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Personal Information -->
+      <div>
+        <h2 class="text-lg font-semibold mb-4">Personal Information</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-sm font-medium text-gray-700">First Name</label>
+            <input type="text" placeholder="Enter Your First Name" class="mt-1 w-full border rounded-lg p-2" />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700">Last Name</label>
+            <input type="text" placeholder="Enter Your Last Name" class="mt-1 w-full border rounded-lg p-2" />
+          </div>
         </div>
-    </nav>
+        <div class="mt-4">
+          <label class="block text-sm font-medium text-gray-700">Enter Your Phone Number</label>
+          <input type="tel" placeholder="Enter Your Phone Number" class="mt-1 w-full border rounded-lg p-2" />
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+          <div>
+            <label class="block text-sm font-medium text-gray-700">Gender</label>
+            <select class="mt-1 w-full border rounded-lg p-2">
+              <option>Male</option>
+              <option>Female</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700">Birth-date</label>
+            <input type="date" class="mt-1 w-full border rounded-lg p-2" />
+          </div>
+        </div>
+        <div class="mt-4">
+          <label class="block text-sm font-medium text-gray-700">NID</label>
+          <input type="text" placeholder="Enter Your NID Number" class="mt-1 w-full border rounded-lg p-2" />
+        </div>
+      </div>
 
-    <script>
-        document.querySelectorAll('.group').forEach(group => {
-            const dropdown = group.querySelector('.dropdown');
-            group.addEventListener('mouseenter', () => {
-                dropdown.classList.add('dropdown-enter-active');
-            });
-            group.addEventListener('mouseleave', () => {
-                dropdown.classList.remove('dropdown-enter-active');
-            });
-        });
-    </script>
+      <!-- Vehicle Information -->
+      <div>
+        <h2 class="text-lg font-semibold mb-4">Vehicle Information</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-sm font-medium text-gray-700">Select Brand</label>
+            <input type="text" placeholder="Selected The Brand" class="mt-1 w-full border rounded-lg p-2" />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700">Select Model</label>
+            <input type="text" placeholder="Selected your Bike or Car" class="mt-1 w-full border rounded-lg p-2" />
+          </div>
+        </div>
+        <div class="mt-4">
+          <label class="block text-sm font-medium text-gray-700">Registration Number</label>
+          <input type="text" placeholder="Digits" class="mt-1 w-full border rounded-lg p-2" />
+        </div>
+        <div class="mt-4">
+          <label class="block text-sm font-medium text-gray-700">Year</label>
+          <select class="mt-1 w-full border rounded-lg p-2">
+            <option>Select year</option>
+            <option>2024</option>
+            <option>2023</option>
+            <option>2022</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex justify-end mt-8">
+      <button type="submit" class="bg-rose-400 hover:bg-rose-500 text-white py-2 px-6 rounded-lg">Submit</button>
+    </div>
+  </form>
 </body>
-
 </html>

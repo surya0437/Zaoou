@@ -7,74 +7,142 @@
     <title>All-In-One App</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-[#F4F1EA] w-full font-poppins overflow-x-hidden">
+<body class="bg-[#F4F1EA] w-full overflow-x-hidden">
     <section class="relative">
         <!-- Background Video -->
         <video autoplay muted loop class="w-full h-full object-cover">
-            <source src="video/video.mp4" type="video/mp4">
+            <source src="video/hero.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
 
         <!-- Overlay -->
-        <div class="absolute inset-0 bg-black bg-opacity-40 z-0"></div>
+        <div class="absolute inset-0 bg-black bg-opacity-60 z-0"></div>
 
         <!-- Navbar -->
-        <nav class="absolute top-0 left-0 w-full bg-transparent p-5 lg:px-16 z-20">
+        <nav class="absolute top-0 left-0 w-full bg-black bg-opacity-0 lg:bg-opacity-30 p-3 lg:py-5 lg:px-16 z-20">
             <div class="flex items-center justify-between">
                 <!-- Logo -->
                 <div class="flex items-center">
-                    <img src="image/logo.jpg" alt="Logo" class="h-10 w-auto">
+                    <img src="image/logo-white.png" alt="Logo" class="h-4 lg:h-8 w-auto">
                 </div>
 
-                <!-- Hamburger Button (Mobile) -->
-                <!-- <button data-collapse-toggle="mobile-menu" type="button"
-                    class="lg:hidden text-white focus:outline-none">
+                <button type="button" data-drawer-target="drawer" data-drawer-show="drawer" data-drawer-backdrop="false"
+                    aria-controls="drawer" class="lg:hidden text-white focus:outline-none">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7"></path>
                     </svg>
-                </button> -->
-
-                <button type="button"id="toggleDrawer"
-                class="lg:hidden text-white focus:outline-none">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7"></path>
-                </svg>
-            </button>
-
+                </button>
                 <!-- Desktop Menu -->
-                <div class="hidden lg:flex space-x-16 text-white text-lg" id="desktop-menu">
-                    <a href="#"
-                        class="hover:text-[#ed6140] font-semibold transform transition duration-300 ease-in-out hover:scale-105">
-                        Services
-                    </a>
-                    <a href="#"
-                        class="hover:text-[#ed6140] font-semibold transform transition duration-300 ease-in-out hover:scale-105">
-                        Blogs
-                    </a>
-                    <a href="#"
-                        class="hover:text-[#ed6140] font-semibold transform transition duration-300 ease-in-out hover:scale-105">
-                        Help
-                    </a>
-                    <a href="#"
-                        class="hover:text-[#ed6140] font-semibold transform transition duration-300 ease-in-out hover:scale-105">
-                        More
-                    </a>
+
+                <div class="hidden lg:flex space-x-16 text-white text-lg items-center justify-center" id="desktop-menu">
+                    <!-- Services -->
+                    <div class="relative group dropdown">
+                        <a href="#"
+                            class="hover:text-[#ed6140] font-semibold transform transition duration-300 ease-in-out hover:scale-105">Services
+                            <span>&#x25BC;</span></a>
+                        <div
+                            class="absolute left-0 mt-1 hidden group-hover:flex flex-col bg-white rounded shadow-lg p-4 space-y-4 w-[23rem] animate__animated  animate__fadeIn hover:text-[#ed6140]">
+                            <a href=""
+                                class="flex items-center space-x-3 text-base text-black hover:text-[#ed6140] transform transition duration-300 ease-in-out hover:scale-105 transform transition duration-300 ease-in-out hover:scale-105">
+                                <img src="image/ride.png" alt="Bike" class="w-10 h-10">
+                                <div>
+                                    <p class="font-normal">Ride</p>
+                                    <p class="text-sm text-gray-500">Beat the Traffic, Save Time</p>
+                                </div>
+                            </a>
+                            <a href=""
+                                class="flex items-center space-x-3 text-base text-black hover:text-[#ed6140] transform transition duration-300 ease-in-out hover:scale-105">
+                                <img src="image/food-delivary.svg" alt="Car" class="w-10 h-10">
+                                <div>
+                                    <p class="font-normal">Food Delivery</p>
+                                    <p class="text-sm text-gray-500">Satisfy Your Cravings, Fast and Fresh</p>
+                                </div>
+                            </a>
+                            <a href=""
+                                class="flex items-center space-x-3 text-base text-black hover:text-[#ed6140] transform transition duration-300 ease-in-out hover:scale-105">
+                                <img src="image/parsll-delevary.svg" alt="Parcel" class="w-10 h-10">
+                                <div>
+                                    <p class="font-normal">Parcel Delevery</p>
+                                    <p class="text-sm text-gray-500">Fast & Reliable Delivery</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="relative group dropdown">
+                        <a href="#"
+                            class="hover:text-[#ed6140] font-semibold transform transition duration-300 ease-in-out hover:scale-105">Blogs</a>
+                    </div>
+                    <div class="relative group dropdown">
+                        <a href="#"
+                            class="hover:text-[#ed6140] font-semibold transform transition duration-300 ease-in-out hover:scale-105">Help
+                            <span>&#x25BC;</span></a>
+                        <div
+                            class="absolute left-0 mt-1 hidden group-hover:flex flex-col bg-white rounded shadow-lg p-4 space-y-4 w-[14rem] animate__animated  animate__fadeIn hover:text-[#ed6140]">
+                            <a href=""
+                                class="text-base text-black hover:text-[#ed6140] transform transition duration-300 ease-in-out hover:scale-105">
+                                <div>
+                                    <p class="font-normal">Walk in support center</p>
+                                </div>
+                            </a>
+                            <a href=""
+                                class="text-base text-black hover:text-[#ed6140] transform transition duration-300 ease-in-out hover:scale-105">
+                                <div>
+                                    <p class="font-normal">Send us a message</p>
+                                </div>
+                            </a>
+                            <a href=""
+                                class="text-base text-black hover:text-[#ed6140] transform transition duration-300 ease-in-out hover:scale-105">
+                                <div>
+                                    <p class="font-normal">Help-line +977-12536</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="relative group dropdown">
+                        <a href="#"
+                            class="hover:text-[#ed6140] font-semibold transform transition duration-300 ease-in-out hover:scale-105">More
+                            <span>&#x25BC;</span></a>
+                        <div
+                            class="absolute left-0 mt-1 hidden group-hover:flex flex-col bg-white rounded shadow-lg p-4 space-y-4 w-[12rem] animate__animated  animate__fadeIn hover:text-[#ed6140]">
+                            <a href=""
+                                class="text-base text-black hover:text-[#ed6140] transform transition duration-300 ease-in-out hover:scale-105">
+                                <div>
+                                    <p class="font-normal">Download App</p>
+                                </div>
+                            </a>
+                            <a href=""
+                                class="text-base text-black hover:text-[#ed6140] transform transition duration-300 ease-in-out hover:scale-105">
+                                <div>
+                                    <p class="font-normal">About Us</p>
+                                </div>
+                            </a>
+                            <a href=""
+                                class="text-base text-black hover:text-[#ed6140] transform transition duration-300 ease-in-out hover:scale-105">
+                                <div>
+                                    <p class="font-normal">Contact Us</p>
+                                </div>
+                            </a>
+                            <a href=""
+                                class="text-base text-black hover:text-[#ed6140] transform transition duration-300 ease-in-out hover:scale-105">
+                                <div>
+                                    <p class="font-normal">Earn with Zaaou</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+
                     <button
-                        class="bg-[#ed6140] text-white px-5 py-2 rounded-lg hover:bg-black font-semibold transform transition duration-300 ease-in-out hover:scale-105">
-                        Earn with Zaaou
-                    </button>
-                    <button
-                        class="bg-black text-white px-5 py-2 rounded-lg hover:bg-[#ed6140] font-semibold transform transition duration-300 ease-in-out hover:scale-105">
-                        Download App
+                        class="outline-solid border-2 text-white px-5 py-2 rounded-lg hover:bg-[#ed6140] font-semibold flex items-center space-x-2 transform transition duration-300 ease-in-out hover:scale-105">
+                        <img src="image/install-phone.svg" alt="Download Icon" class="w-6 h-6">
+                        <span>Download App</span>
                     </button>
                 </div>
 
@@ -83,16 +151,124 @@
             <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden"></div>
 
             <div id="drawer"
-                class="fixed top-0 left-0 h-full w-64 bg-white shadow-lg transform -translate-x-full transition-transform duration-300">
-                <div class="p-4 text-lg font-semibold">Info</div>
-                <ul class="space-y-4 px-4">
-                    <li class="cursor-pointer">🏠 Dashboard</li>
-                    <li class="cursor-pointer">🛒 E-commerce</li>
-                    <li class="cursor-pointer">📌 Kanban <span
-                            class="bg-gray-300 text-xs px-2 py-1 rounded-md">Pro</span></li>
-                    <li class="cursor-pointer">🛍️ Widgets</li>
-                </ul>
+                class="fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-64"
+                tabindex="-1" aria-labelledby="drawer-label">
+                <h5 id="drawer-label" class="text-base font-semibold text-gray-700 uppercase">Menu</h5>
+                <button type="button" data-drawer-hide="drawer" aria-controls="drawer"
+                    class="text-gray-500 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 inline-flex items-center justify-center">
+                    <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 14 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                    </svg>
+                    <span class="sr-only">Close menu</span>
+                </button>
+                <div class="py-4 overflow-y-auto">
+                    <ul class="space-y-2 font-medium">
+                        <li>
+                            <button type="button"
+                                class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100"
+                                aria-controls="service" data-collapse-toggle="service">
+                                <img src="icon/circle.svg" alt="">
+                                <span
+                                    class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap text-[#ed6140]">Services</span>
+                                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 10 6">
+                                    <path stroke="#ed6140" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 1 4 4 4-4" />
+                                </svg>
+                            </button>
+                            <ul id="service" class="hidden py-2 space-y-2">
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Ride</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Food
+                                        Delivery</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Parsll
+                                        Delivery</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
+                                <img src="icon/circle.svg" alt="">
+                                <span class="ms-3 text-[#ed6140]">Blog</span>
+                            </a>
+                        </li>
+                        <li>
+                            <button type="button"
+                                class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100"
+                                aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
+                                <img src="icon/circle.svg" alt="">
+                                <span
+                                    class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap text-[#ed6140]">Help</span>
+                                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 10 6">
+                                    <path stroke="#ed6140" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 1 4 4 4-4" />
+                                </svg>
+                            </button>
+                            <ul id="dropdown-example" class="hidden py-2 space-y-2">
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Support center</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Send
+                                        message</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Help-line
+                                        +977-12536</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <button type="button"
+                                class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100"
+                                aria-controls="more" data-collapse-toggle="more">
+                                <img src="icon/circle.svg" alt="">
+                                <span
+                                    class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap text-[#ed6140]">More</span>
+                                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 10 6">
+                                    <path stroke="#ed6140" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 1 4 4 4-4" />
+                                </svg>
+                            </button>
+                            <ul id="more" class="hidden py-2 space-y-2">
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Download</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Contact Us</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Earn with zaaou</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
+
+
 
         </nav>
 
@@ -101,8 +277,10 @@
             <h2 class="text-2xl sm:text-2xl md:text-4xl lg:text-5xl font-bold text-[#ed6140] text-animation">
                 Zaaou Super App
             </h2>
-            <h1 class="text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold mt-2 text-animation">
-                The Future of Digital Convenience One App, Unlimited Possibilities
+            <h1 class="mt-2 text-animation">
+                <p class="my-5 sm:text-3xl md:text-4xl lg:text-5xl font-thin">The Future of Digital Convenience One App,
+                </p>
+                <p class="text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold ">Unlimited Possibilities</p>
             </h1>
 
         </div>
@@ -148,8 +326,8 @@
                     </div>
                     <div class="flex justify-center md:justify-end mt-8 md:mt-0">
                         <div class="w-full md:w-[300px] h-[300px] flex items-center justify-center rounded-lg">
-                            <img src="image/img1.png" alt="Image"
-                                class="w-full h-full object-cover rounded-lg transition-transform duration-300 transform hover:scale-105">
+                            <img src="image/car2.svg" alt="Image"
+                                class="w-full h-full object-fit rounded-lg transition-transform duration-300 transform hover:scale-105">
                         </div>
                     </div>
 
@@ -529,20 +707,27 @@
     </section>
 
     <footer class="bg-[#282828] text-white py-12 px-5 md:px-20">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-20 sm:mt-24 md:mt-28 lg:mt-56
+        <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-28 sm:mt-24 md:mt-28 lg:mt-56
         ">
             <!-- Brand Section -->
             <div>
                 <div class="flex items-center space-x-3">
-                    <img src="image/logo.jpg" alt="Zaouu Nepal" class="w-10 h-10">
-                    <h2 class="text-xl font-bold">Zaouu Nepal</h2>
+                    <img src="image/logo-white.png" alt="Zaouu Nepal" class="h-10">
+                    <!-- <h2 class="text-xl font-bold">Zaouu Nepal</h2> -->
                 </div>
-                <p class="mt-3 text-gray-400">Lorem ipsum dolor sit amet consectetur. Interdum faucibus eget a amet
+                <p class=" py-3 m-3 text-gray-400">Lorem ipsum dolor sit amet consectetur. Interdum faucibus eget a amet
                     justo tellus magnis.</p>
                 <div class="flex space-x-4 mt-4">
-                    <a href="#" class="text-white text-lg"><i class="fab fa-facebook"></i></a>
-                    <a href="#" class="text-white text-lg"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="text-white text-lg"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white text-lg">
+                        <img class="transition-transform duration-300 hover:scale-110" src="icon/facebook.svg" alt="">
+                    </a>
+                    <a href="#" class="text-white text-lg">
+                        <img class="transition-transform duration-300 hover:scale-110" src="icon/instagram.svg" alt="">
+                    </a>
+                    <a href="#" class="text-white text-lg">
+                        <img class="transition-transform duration-300 hover:scale-110" class="" src="icon/youtube.svg"
+                            alt="">
+                    </a>
                 </div>
             </div>
 
@@ -576,12 +761,16 @@
             <!-- Newsletter Section -->
             <div>
                 <h3 class="text-lg font-semibold mb-3">Get latest Information</h3>
-                <div class="flex items-center bg-gray-700 p-2 rounded-md">
+                <div class="flex items-center bg-[#666666] rounded-md">
                     <input type="email" placeholder="Email-id"
-                        class="bg-transparent outline-none flex-1 px-2 text-white placeholder-gray-400">
-                    <button class="bg-[#ed6140] px-4 py-2 rounded-md text-white text-lg">&gt;</button>
+                        class="bg-transparent outline-none border border-transparent border-r-0 flex-1 p-2 text-white placeholder-gray-400 focus:border-[#ed6140] focus:ring-1 focus:ring-[#ed6140] focus:rounded-l-md">
+                    <button class="bg-[#ed6140] px-4 py-1 rounded-r-md text-white text-lg">
+                        <img src="icon/send.svg" alt="" class="transition-transform duration-300 hover:scale-110">
+                    </button>
+
                 </div>
             </div>
+
         </div>
 
         <!-- Bottom Footer -->

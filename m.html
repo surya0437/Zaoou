@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Animated Hover Dropdown Menu</title>
+    <style>
+        .dropdown-enter {
+            transform: translateY(-20px);
+            opacity: 0;
+        }
+
+        .dropdown-enter-active {
+            transform: translateY(0);
+            opacity: 1;
+            transition: all 300ms ease-in-out;
+        }
+    </style>
+</head>
+
+
+
+<body class="bg-gray-100">
+    <nav class="absolute top-0 left-0 w-full bg-black bg-opacity-30 p-5 lg:px-16 z-20">
+        <div class="container mx-auto flex justify-center space-x-16 text-lg">
+            <div class="relative group">
+                <a href="#" class="hover:text-[#ed6140] font-semibold">Services</a>
+                <div
+                    class="absolute left-0 mt-2 hidden group-hover:flex flex-col bg-white rounded-lg shadow-lg p-4 space-y-4 dropdown">
+                    <div class="flex items-center space-x-3">
+                        <img src="https://via.placeholder.com/40" alt="Bike" class="w-10 h-10">
+                        <div>
+                            <p class="font-semibold">Bike</p>
+                            <p class="text-sm text-gray-500">Beat the Traffic, Save Time</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <img src="https://via.placeholder.com/40" alt="Car" class="w-10 h-10">
+                        <div>
+                            <p class="font-semibold">Car</p>
+                            <p class="text-sm text-gray-500">Travel in Comfort</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <img src="https://via.placeholder.com/40" alt="Parcel" class="w-10 h-10">
+                        <div>
+                            <p class="font-semibold">Parcel <span class="text-red-500 font-bold text-xs ml-1">NEW</span>
+                            </p>
+                            <p class="text-sm text-gray-500">Fast & Reliable Delivery</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative group">
+                <a href="#" class="hover:text-[#ed6140] font-semibold">Blogs</a>
+                <div
+                    class="absolute left-0 mt-2 hidden group-hover:flex flex-col bg-white rounded-lg shadow-lg p-4 space-y-4 dropdown">
+                    <p class="font-semibold">Latest Blog Posts</p>
+                    <p class="text-sm text-gray-500">Stay updated with new trends</p>
+                </div>
+            </div>
+
+            <div class="relative group">
+                <a href="#" class="hover:text-[#ed6140] font-semibold">Help</a>
+                <div
+                    class="absolute left-0 mt-2 hidden group-hover:flex flex-col bg-white rounded-lg shadow-lg p-4 space-y-4 dropdown">
+                    <p class="font-semibold">Support Center</p>
+                    <p class="text-sm text-gray-500">We are here to assist you</p>
+                </div>
+            </div>
+
+            <div class="relative group">
+                <a href="#" class="hover:text-[#ed6140] font-semibold">More</a>
+                <div
+                    class="absolute left-0 mt-2 hidden group-hover:flex flex-col bg-white rounded-lg shadow-lg p-4 space-y-4 dropdown">
+                    <p class="font-semibold">Explore More Options</p>
+                    <p class="text-sm text-gray-500">Discover additional features</p>
+                </div>
+            </div>
+
+            <button
+                class="outline-solid border-2 text-white px-5 py-2 rounded-lg hover:bg-[#ed6140] font-semibold flex items-center space-x-2">
+                <img src="image/install-phone.svg" alt="Download Icon" class="w-6 h-6">
+                <span>Download App</span>
+            </button>
+        </div>
+    </nav>
+
+    <script>
+        document.querySelectorAll('.group').forEach(group => {
+            const dropdown = group.querySelector('.dropdown');
+            group.addEventListener('mouseenter', () => {
+                dropdown.classList.add('dropdown-enter-active');
+            });
+            group.addEventListener('mouseleave', () => {
+                dropdown.classList.remove('dropdown-enter-active');
+            });
+        });
+    </script>
+</body>
+
+</html>

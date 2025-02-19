@@ -1,72 +1,105 @@
-<section class="max-w-7xl mx-auto px-6 py-12">
-    <h2 class="text-3xl font-bold text-gray-900 flex items-center">
-        <span class="text-[#ed6140] text-4xl mr-2">–</span> Financial Partners
-    </h2>
-    <p class="text-lg text-gray-700 font-semibold mt-2">Our <span class="text-[#ed6140]">Financial Partners</span></p>
+<!DOCTYPE html>
+<html lang="en">
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mt-8">
-        <!-- Food Delivery -->
-        <div
-            class="bg-white p-6 rounded-lg shadow text-center transform transition duration-300 ease-in-out hover:scale-105">
-            <div class="flex justify-center">
-                <div class="bg-gray-100 p-4 rounded-lg shadow">
-                    <img class="w-36" src="image/esewa.png" alt="Esewa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Animated Hover Dropdown Menu</title>
+    <style>
+        .dropdown-enter {
+            transform: translateY(-20px);
+            opacity: 0;
+        }
+
+        .dropdown-enter-active {
+            transform: translateY(0);
+            opacity: 1;
+            transition: all 300ms ease-in-out;
+        }
+    </style>
+</head>
+
+
+
+<body class="bg-gray-100">
+    <nav class="bg-[#121212] text-white py-4">
+        <div class="container mx-auto flex justify-center space-x-16 text-lg">
+            <div class="relative group">
+                <a href="#" class="hover:text-[#ed6140] font-semibold">Services</a>
+                <div
+                    class="absolute left-0 mt-2 hidden group-hover:flex flex-col bg-white rounded-lg shadow-lg p-4 space-y-4 dropdown">
+                    <div class="flex items-center space-x-3">
+                        <img src="https://via.placeholder.com/40" alt="Bike" class="w-10 h-10">
+                        <div>
+                            <p class="font-semibold">Bike</p>
+                            <p class="text-sm text-gray-500">Beat the Traffic, Save Time</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <img src="https://via.placeholder.com/40" alt="Car" class="w-10 h-10">
+                        <div>
+                            <p class="font-semibold">Car</p>
+                            <p class="text-sm text-gray-500">Travel in Comfort</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <img src="https://via.placeholder.com/40" alt="Parcel" class="w-10 h-10">
+                        <div>
+                            <p class="font-semibold">Parcel <span class="text-red-500 font-bold text-xs ml-1">NEW</span>
+                            </p>
+                            <p class="text-sm text-gray-500">Fast & Reliable Delivery</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <h3 class="text-xl font-semibold mt-4">Esewa</h3>
-            <!-- <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, doloribus?
-            </p>
-            <button
-                class="mt-4 px-4 py-2 border rounded-lg text-gray-700 hover:bg-[#ed6140] hover:text-white transform transition duration-300 ease-in-out hover:scale-105">View
-                More</button> -->
-        </div>
 
-        <!-- Ride Booking -->
-        <div
-            class="bg-white p-6 rounded-lg shadow text-center transform transition duration-300 ease-in-out hover:scale-105">
-            <div class="flex justify-center">
-                <div class="bg-gray-100 p-4 rounded-lg shadow">
-                    <img class="w-44" src="image/fonepay.png" alt="Fonapay">
+            <div class="relative group">
+                <a href="#" class="hover:text-[#ed6140] font-semibold">Blogs</a>
+                <div
+                    class="absolute left-0 mt-2 hidden group-hover:flex flex-col bg-white rounded-lg shadow-lg p-4 space-y-4 dropdown">
+                    <p class="font-semibold">Latest Blog Posts</p>
+                    <p class="text-sm text-gray-500">Stay updated with new trends</p>
                 </div>
             </div>
-            <h3 class="text-xl font-semibold mt-4">Fonapay</h3>
-            <!-- <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, doloribus?
-            </p>
-            <button
-                class="mt-4 px-4 py-2 border rounded-lg text-gray-700 hover:bg-[#ed6140] hover:text-white transform transition duration-300 ease-in-out hover:scale-105">View
-                More</button> -->
-        </div>
 
-        <!-- Parcel Delivery -->
-        <div
-            class="bg-white p-6 rounded-lg shadow text-center transform transition duration-300 ease-in-out hover:scale-105">
-            <div class="flex justify-center">
-                <div class="bg-gray-100 p-4 rounded-lg shadow">
-                    <img class="w-36" src="image/khalti.png" alt="Khalti">
+            <div class="relative group">
+                <a href="#" class="hover:text-[#ed6140] font-semibold">Help</a>
+                <div
+                    class="absolute left-0 mt-2 hidden group-hover:flex flex-col bg-white rounded-lg shadow-lg p-4 space-y-4 dropdown">
+                    <p class="font-semibold">Support Center</p>
+                    <p class="text-sm text-gray-500">We are here to assist you</p>
                 </div>
             </div>
-            <h3 class="text-xl font-semibold mt-4">Khalti</h3>
-            <!-- <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, doloribus?
-            </p>
-            <button
-                class="mt-4 px-4 py-2 border rounded-lg text-gray-700 hover:bg-[#ed6140] hover:text-white transform transition duration-300 ease-in-out hover:scale-105">View
-                More</button> -->
-        </div>
 
-        <!-- Digital Services -->
-        <div
-            class="bg-white p-6 rounded-lg shadow text-center transform transition duration-300 ease-in-out hover:scale-105">
-            <div class="flex justify-center">
-                <div class="bg-gray-100 p-4 rounded-lg shadow">
-                    <img class="w-44" src="image/connectips.png" alt="Connect IPs">
+            <div class="relative group">
+                <a href="#" class="hover:text-[#ed6140] font-semibold">More</a>
+                <div
+                    class="absolute left-0 mt-2 hidden group-hover:flex flex-col bg-white rounded-lg shadow-lg p-4 space-y-4 dropdown">
+                    <p class="font-semibold">Explore More Options</p>
+                    <p class="text-sm text-gray-500">Discover additional features</p>
                 </div>
             </div>
-            <h3 class="text-xl font-semibold mt-4">Connect IPs</h3>
-            <!-- <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, doloribus?
-            </p>
+
             <button
-                class="mt-4 px-4 py-2 border rounded-lg text-gray-700 hover:bg-[#ed6140] hover:text-white transform transition duration-300 ease-in-out hover:scale-105">View
-                More</button> -->
+                class="outline-solid border-2 text-white px-5 py-2 rounded-lg hover:bg-[#ed6140] font-semibold flex items-center space-x-2">
+                <img src="image/install-phone.svg" alt="Download Icon" class="w-6 h-6">
+                <span>Download App</span>
+            </button>
         </div>
-    </div>
-</section>
+    </nav>
+
+    <script>
+        document.querySelectorAll('.group').forEach(group => {
+            const dropdown = group.querySelector('.dropdown');
+            group.addEventListener('mouseenter', () => {
+                dropdown.classList.add('dropdown-enter-active');
+            });
+            group.addEventListener('mouseleave', () => {
+                dropdown.classList.remove('dropdown-enter-active');
+            });
+        });
+    </script>
+</body>
+
+</html>

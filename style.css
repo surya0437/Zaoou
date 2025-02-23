@@ -67,3 +67,8 @@
 .text-animation:last-child {
   animation-delay: 1s; /* Second text appears after the first */
 }
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}

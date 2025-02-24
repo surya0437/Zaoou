@@ -68,6 +68,9 @@
   animation-delay: 1s; /* Second text appears after the first */
 }
 
+/* Ensure swiper container is full width and flexible */
+/*  */
+
 .swiper-button-prev::after,
 .swiper-button-next::after {
   display: none;

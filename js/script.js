@@ -37,12 +37,12 @@ const swiper = new Swiper(".mySwiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  slidesPerView: 3, // Adjust slides visible at once
+  slidesPerView: 1, // Default to 1 slide visible
   spaceBetween: 20, // Spacing between slides
   breakpoints: {
-    640: { slidesPerView: 1 },
-    768: { slidesPerView: 2 },
-    1024: { slidesPerView: 3 },
+    640: { slidesPerView: 1 },  // 1 slide for screens 640px and below
+    768: { slidesPerView: 2 },  // 2 slides for screens 768px and above
+    1024: { slidesPerView: 3 }, // 3 slides for screens 1024px and above
   },
 });
 
@@ -57,19 +57,4 @@ document.querySelectorAll(".group").forEach((group) => {
   });
 });
 
-const fileInput = document.getElementById("fileInput");
-const imagePreview = document.getElementById("imagePreview");
-const placeholderIcon = document.getElementById("placeholderIcon");
 
-fileInput.addEventListener("change", (e) => {
-  const file = e.target.files[0];
-  if (file) {
-    const reader = new FileReader();
-    reader.onload = () => {
-      imagePreview.src = reader.result;
-      imagePreview.classList.remove("hidden");
-      placeholderIcon.classList.add("hidden");
-    };
-    reader.readAsDataURL(file);
-  }
-});

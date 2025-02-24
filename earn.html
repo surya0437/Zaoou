@@ -26,9 +26,9 @@
         <nav class="absolute top-0 left-0 w-full bg-black bg-opacity-0 lg:bg-opacity-30 p-3 lg:py-5 lg:px-16 z-20">
             <div class="flex items-center justify-between">
                 <!-- Logo -->
-                <div class="flex items-center">
+                <a href="index.html" class="flex items-center">
                     <img src="image/logo-white.png" alt="Logo" class="h-4 lg:h-8 w-auto">
-                </div>
+                </a>
 
                 <button type="button" data-drawer-target="drawer" data-drawer-show="drawer" data-drawer-backdrop="false"
                     aria-controls="drawer" class="lg:hidden text-white focus:outline-none">
@@ -40,11 +40,26 @@
                 <!-- Desktop Menu -->
 
                 <div class="hidden lg:flex space-x-16 text-white text-lg items-center justify-center" id="desktop-menu">
+                    <div class="relative group dropdown">
+                        <a href="index.html"
+                            class="hover:text-[#ed6140] font-semibold transform transition duration-300 ease-in-out hover:scale-105">Home</a>
+                    </div>
                     <!-- Services -->
                     <div class="relative group dropdown">
+
                         <a href="#"
-                            class="hover:text-[#ed6140] font-semibold transform transition duration-300 ease-in-out hover:scale-105">Services
-                            <span>&#x25BC;</span></a>
+                            class="group flex items-center justify-center gap-4 font-semibold transform transition duration-300 ease-in-out hover:scale-105 hover:text-[#ed6140]">
+                            Services
+                            <span>
+                                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 10 6">
+                                    <path
+                                        class="group-hover:stroke-[#ed6140] transform transition duration-300 ease-in-out hover:scale-105"
+                                        stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="m1 1 4 4 4-4" />
+                                </svg>
+                            </span>
+                        </a>
                         <div
                             class="absolute left-0 mt-1 hidden group-hover:flex flex-col bg-white rounded shadow-lg p-4 space-y-4 w-[23rem] animate__animated  animate__fadeIn hover:text-[#ed6140]">
                             <a href=""
@@ -80,8 +95,19 @@
                     </div>
                     <div class="relative group dropdown">
                         <a href="#"
-                            class="hover:text-[#ed6140] font-semibold transform transition duration-300 ease-in-out hover:scale-105">Help
-                            <span>&#x25BC;</span></a>
+                            class="group flex items-center justify-center gap-4 font-semibold transform transition duration-300 ease-in-out hover:scale-105 hover:text-[#ed6140]">
+                            Help
+                            <span>
+                                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 10 6">
+                                    <path
+                                        class="group-hover:stroke-[#ed6140] transform transition duration-300 ease-in-out hover:scale-105"
+                                        stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="m1 1 4 4 4-4" />
+                                </svg>
+                            </span>
+                        </a>
+
                         <div
                             class="absolute left-0 mt-1 hidden group-hover:flex flex-col bg-white rounded shadow-lg p-4 space-y-4 w-[14rem] animate__animated  animate__fadeIn hover:text-[#ed6140]">
                             <a href=""
@@ -107,8 +133,18 @@
 
                     <div class="relative group dropdown">
                         <a href="#"
-                            class="hover:text-[#ed6140] font-semibold transform transition duration-300 ease-in-out hover:scale-105">More
-                            <span>&#x25BC;</span></a>
+                            class="group flex items-center justify-center gap-4 font-semibold transform transition duration-300 ease-in-out hover:scale-105 hover:text-[#ed6140]">
+                            More
+                            <span>
+                                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 10 6">
+                                    <path
+                                        class="group-hover:stroke-[#ed6140] transform transition duration-300 ease-in-out hover:scale-105"
+                                        stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="m1 1 4 4 4-4" />
+                                </svg>
+                            </span>
+                        </a>
                         <div
                             class="absolute left-0 mt-1 hidden group-hover:flex flex-col bg-white rounded shadow-lg p-4 space-y-4 w-[12rem] animate__animated  animate__fadeIn hover:text-[#ed6140]">
                             <a href=""
@@ -129,7 +165,7 @@
                                     <p class="font-normal">Contact Us</p>
                                 </div>
                             </a>
-                            <a href=""
+                            <a href="earn.html"
                                 class="text-base text-black hover:text-[#ed6140] transform transition duration-300 ease-in-out hover:scale-105">
                                 <div>
                                     <p class="font-normal">Earn with Zaaou</p>
@@ -141,7 +177,6 @@
 
                     <button
                         class="outline-solid border-2 text-white px-5 py-2 rounded-lg hover:bg-[#ed6140] font-semibold flex items-center space-x-2 transform transition duration-300 ease-in-out hover:scale-105">
-                        <img src="image/install-phone.svg" alt="Download Icon" class="w-6 h-6">
                         <span>Download App</span>
                     </button>
                 </div>
@@ -167,7 +202,7 @@
                     <ul class="space-y-2 font-medium">
                         <li>
                             <button type="button"
-                                class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-[#F4F1EA]"
+                                class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100"
                                 aria-controls="service" data-collapse-toggle="service">
                                 <img src="icon/circle.svg" alt="">
                                 <span
@@ -262,7 +297,7 @@
                                         Us</a>
                                 </li>
                                 <li>
-                                    <a href="#"
+                                    <a href="earn.html"
                                         class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Earn
                                         with zaaou</a>
                                 </li>
@@ -295,104 +330,374 @@
             <span class="text-[#ed6140] text-4xl mr-2">–</span> Become Delivery man or Rider
         </h2>
         <p class="text-lg text-gray-700 font-semibold mt-2">Register Now</p>
+        <form action="">
+            <div class="bg-white mt-8 w-full rounded-lg shadow p-6 py-16">
+                <div class="flex flex-col justify-center items-center">
+                    <label for="profile"
+                        class="upload-box w-32 h-32 rounded-full border-2 border-dashed border-[#ed6140] flex justify-center items-center cursor-pointer overflow-hidden relative">
+                        <img class="imagePreview hidden h-[150px]" src="https://via.placeholder.com/150" alt="Preview"
+                            class="w-full h-full object-cover hidden" />
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon text-gray-400" width="64" height="64"
+                            fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                            <path fill-rule="evenodd"
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                        </svg>
+                    </label>
+                    <input type="file" id="profile"" accept=" image/*" class="fileInput hidden" />
+                    <span class="mt-2 text-gray-600 cursor-pointer">Upload Image</span>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-3">
 
-        <div class="bg-white mt-8 w-full rounded-lg shadow p-6">
-
-            <div class="flex flex-col justify-center items-center">
-                <label for="fileInput"
-                    class="w-32 h-32 rounded-full border-2 border-dashed border-[#ed6140] flex justify-center items-center cursor-pointer overflow-hidden">
-                    <img id="imagePreview" src="https://via.placeholder.com/150" alt="Preview"
-                        class="w-full h-full object-cover hidden" />
-                    <svg xmlns="http://www.w3.org/2000/svg" class="text-gray-400" width="96" height="96"
-                        fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
-                        <path fill-rule="evenodd"
-                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
-                    </svg>
-                </label>
-                <label for="fileInput" class="mt-2 text-gray-600 cursor-pointer">Upload Image</label>
-                <input type="file" id="fileInput" accept="image/*" class="hidden" />
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-3">
-
-                <div>
-                    <h2 class="text-lg font-semibold mb-4">Personal Information</h2>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div>
-                            <label class="block text-sm font-medium text-gray-700">First Name</label>
-                            <input type="text" placeholder="Enter Your First Name"
+                    <div>
+                        <h2 class="text-lg font-semibold mb-4">Personal Information</h2>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700">First Name <span
+                                        class="text-red-500">*</span></label>
+                                <input type="text" placeholder="Enter Your First Name"
+                                    class="mt-1 w-full border rounded-lg p-2 focus:border-[#ed6140] focus:ring-1 focus:ring-[#ed6140]" />
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700">Last Name <span
+                                        class="text-red-500">*</span></label>
+                                <input type="text" placeholder="Enter Your Last Name"
+                                    class="mt-1 w-full border rounded-lg p-2 focus:border-[#ed6140] focus:ring-1 focus:ring-[#ed6140]" />
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <label class="block text-sm font-medium text-gray-700">Phone Number <span
+                                    class="text-red-500">*</span></label>
+                            <input type="tel" placeholder="Enter Your Phone Number"
                                 class="mt-1 w-full border rounded-lg p-2 focus:border-[#ed6140] focus:ring-1 focus:ring-[#ed6140]" />
                         </div>
-                        <div>
-                            <label class="block text-sm font-medium text-gray-700">Last Name</label>
-                            <input type="text" placeholder="Enter Your Last Name"
+                        <div class="mt-4">
+                            <label class="block text-sm font-medium text-gray-700">Email Address <span
+                                    class="text-red-500">*</span></label>
+                            <input type="email" placeholder="Enter Your email address"
                                 class="mt-1 w-full border rounded-lg p-2 focus:border-[#ed6140] focus:ring-1 focus:ring-[#ed6140]" />
                         </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700">Gender <span
+                                        class="text-red-500">*</span></label>
+                                <select
+                                    class="mt-1 w-full border rounded-lg p-2 focus:border-[#ed6140] focus:ring-1 focus:ring-[#ed6140]">
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700">Birth-date <span
+                                        class="text-red-500">*</span></label>
+                                <input type="date"
+                                    class="mt-1 w-full border rounded-lg p-2 focus:border-[#ed6140] focus:ring-1 focus:ring-[#ed6140]" />
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700">NID <span
+                                        class="text-red-500">*</span></label>
+                                <input type="text" placeholder="Enter Your NID Number"
+                                    class="mt-1 w-full border rounded-lg p-2 focus:border-[#ed6140] focus:ring-1 focus:ring-[#ed6140]" />
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700">Service Area <span
+                                        class="text-red-500">*</span></label>
+                                <select
+                                    class="mt-1 w-full border rounded-lg p-2 focus:border-[#ed6140] focus:ring-1 focus:ring-[#ed6140]">
+                                    <option>area 1</option>
+                                    <option>area 2</option>
+                                    <option>area 3</option>
+                                </select>
+                            </div>
+
+                        </div>
+                        <!-- <h2 class="text-lg font-semibold mt-4">Address and Shift-hour</h2> -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700">Postal Address</label>
+                                <input type="text" placeholder="Enter postal address"
+                                    class="mt-1 w-full border rounded-lg p-2 focus:border-[#ed6140] focus:ring-1 focus:ring-[#ed6140]" />
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700">Postal Code</label>
+                                <input type="text" placeholder="Enter postal code"
+                                    class="mt-1 w-full border rounded-lg p-2 focus:border-[#ed6140] focus:ring-1 focus:ring-[#ed6140]" />
+                            </div>
+                        </div>
+
+                        <div class="mt-4">
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Select Shift <span
+                                    class="text-red-500">*</span></label>
+                            <div class="flex items-center gap-10 flex-wrap">
+                                <label class="flex items-center cursor-pointer focus-within:border-[#ed6140]">
+                                    <input type="radio" name="shift" class="hidden peer">
+                                    <div
+                                        class="w-5 h-5 mr-2 rounded-full border border-black peer-checked:bg-[#ed6140]">
+                                    </div>
+                                    <span>Day (10AM - 08PM)</span>
+                                </label>
+
+                                <label class="flex items-center cursor-pointer focus-within:border-[#ed6140]">
+                                    <input type="radio" name="shift" class="hidden peer">
+                                    <div
+                                        class="w-5 h-5 mr-2 rounded-full border border-black peer-checked:bg-[#ed6140]">
+                                    </div>
+                                    <span>Night (08PM - 12AM)</span>
+                                </label>
+                            </div>
+
+                        </div>
                     </div>
-                    <div class="mt-4">
-                        <label class="block text-sm font-medium text-gray-700">Enter Your Phone
-                            Number</label>
-                        <input type="tel" placeholder="Enter Your Phone Number"
-                            class="mt-1 w-full border rounded-lg p-2 focus:border-[#ed6140] focus:ring-1 focus:ring-[#ed6140]" />
-                    </div>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
-                        <div>
-                            <label class="block text-sm font-medium text-gray-700">Gender</label>
+
+                    <!-- Vehicle Information -->
+                    <div>
+                        <h2 class="text-lg font-semibold mb-4">Vehicle Information</h2>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700">Select Brand <span
+                                        class="text-red-500">*</span></label>
+                                <select
+                                    class="mt-1 w-full border rounded-lg p-2 focus:border-[#ed6140] focus:ring-1 focus:ring-[#ed6140]">
+                                    <option>Select Brand</option>
+                                    <option>Brand 1</option>
+                                    <option>Brand 2</option>
+                                    <option>Brand 3</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700">Select Model <span
+                                        class="text-red-500">*</span></label>
+                                <select
+                                    class="mt-1 w-full border rounded-lg p-2 focus:border-[#ed6140] focus:ring-1 focus:ring-[#ed6140]">
+                                    <option>Select Model</option>
+                                    <option>Model 1</option>
+                                    <option>Model 2</option>
+                                    <option>Model 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <label class="block text-sm font-medium text-gray-700">Registration Number <span
+                                    class="text-red-500">*</span></label>
+                            <input type="text" placeholder="Registration Number"
+                                class="mt-1 w-full border rounded-lg p-2 focus:border-[#ed6140] focus:ring-1 focus:ring-[#ed6140]" />
+                        </div>
+                        <div class="mt-4">
+                            <label class="block text-sm font-medium text-gray-700">Year</label>
                             <select
                                 class="mt-1 w-full border rounded-lg p-2 focus:border-[#ed6140] focus:ring-1 focus:ring-[#ed6140]">
-                                <option>Male</option>
-                                <option>Female</option>
-                                <option>Other</option>
+                                <option>Select year</option>
+                                <option>2024</option>
+                                <option>2023</option>
+                                <option>2022</option>
                             </select>
                         </div>
-                        <div>
-                            <label class="block text-sm font-medium text-gray-700">Birth-date</label>
-                            <input type="date"
+                        <div class="mt-4">
+                            <label class="block text-sm font-medium text-gray-700">Blue Book Number <span
+                                    class="text-red-500">*</span></label>
+                            <input type="text" placeholder="Blue Book Number"
                                 class="mt-1 w-full border rounded-lg p-2 focus:border-[#ed6140] focus:ring-1 focus:ring-[#ed6140]" />
                         </div>
-                    </div>
-                    <div class="mt-4">
-                        <label class="block text-sm font-medium text-gray-700">NID</label>
-                        <input type="text" placeholder="Enter Your NID Number"
-                            class="mt-1 w-full border rounded-lg p-2 focus:border-[#ed6140] focus:ring-1 focus:ring-[#ed6140]" />
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="mt-4">
+                                <label class="block text-sm font-medium text-gray-700">Blue Book Exp. Date <span
+                                        class="text-red-500">*</span></label>
+                                <input type="date"
+                                    class="mt-1 w-full border rounded-lg p-2 focus:border-[#ed6140] focus:ring-1 focus:ring-[#ed6140]" />
+                            </div>
+                            <div class="mt-4">
+                                <label class="block text-sm font-medium text-gray-700">Vehicle License Exp. Date <span
+                                        class="text-red-500">*</span></label>
+                                <input type="date"
+                                    class="mt-1 w-full border rounded-lg p-2 focus:border-[#ed6140] focus:ring-1 focus:ring-[#ed6140]" />
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mt-4">Upload 2 Vehicle image <span
+                                    class="text-red-500">*</span></label>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                <div class="flex flex-col mt-1">
+                                    <label for="vehicleImage"
+                                        class="w-full rounded-lg border-2 border-dashed border-gray-500 flex justify-center items-center cursor-pointer overflow-hidden">
+                                        <img class="imagePreview hidden h-[150px]" src="https://via.placeholder.com/150"
+                                            alt="Preview" class="w-full h-full object-cover hidden" />
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="text-gray-400" width="96"
+                                            height="96" fill="currentColor" class="bi bi-card-image"
+                                            viewBox="0 0 16 16">
+                                            <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+                                            <path
+                                                d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2zm13 1a.5.5 0 0 1 .5.5v6l-3.775-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12v.54L1 12.5v-9a.5.5 0 0 1 .5-.5z" />
+                                        </svg>
+                                    </label>
+                                    <input type="file" id="vehicleImage"" accept=" image/*" class="fileInput hidden" />
+                                </div>
+
+                                <div class="flex flex-col mt-1">
+                                    <label for="vehicleImage"
+                                        class="w-full rounded-lg border-2 border-dashed border-gray-500 flex justify-center items-center cursor-pointer overflow-hidden">
+                                        <img class="imagePreview hidden h-[150px]" src="https://via.placeholder.com/150"
+                                            alt="Preview" class="w-full h-full object-cover hidden" />
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="text-gray-400" width="96"
+                                            height="96" fill="currentColor" class="bi bi-card-image"
+                                            viewBox="0 0 16 16">
+                                            <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+                                            <path
+                                                d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2zm13 1a.5.5 0 0 1 .5.5v6l-3.775-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12v.54L1 12.5v-9a.5.5 0 0 1 .5-.5z" />
+                                        </svg>
+                                    </label>
+                                    <input type="file" id="vehicleImage"" accept=" image/*" class="fileInput hidden" />
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Vehicle Information -->
-                <div>
-                    <h2 class="text-lg font-semibold mb-4">Vehicle Information</h2>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div>
-                            <label class="block text-sm font-medium text-gray-700">Select Brand</label>
-                            <input type="text" placeholder="Selected The Brand"
-                                class="mt-1 w-full border rounded-lg p-2 focus:border-[#ed6140] focus:ring-1 focus:ring-[#ed6140]" />
-                        </div>
-                        <div>
-                            <label class="block text-sm font-medium text-gray-700">Select Model</label>
-                            <input type="text" placeholder="Selected your Bike or Car"
-                                class="mt-1 w-full border rounded-lg p-2 focus:border-[#ed6140] focus:ring-1 focus:ring-[#ed6140]" />
-                        </div>
+                <h2 class="text-lg font-semibold mt-4">Documents</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+
+                    <div class="flex flex-col mt-4">
+                        <label class="block text-sm font-medium text-gray-700 mb-1">NID Front <span
+                                class="text-red-500">*</span></label>
+                        <label for="nidFront"
+                            class="w-full rounded-lg border-2 border-dashed border-gray-500 flex justify-center items-center cursor-pointer overflow-hidden">
+                            <img class="imagePreview hidden h-[150px]" src="https://via.placeholder.com/150"
+                                alt="Preview" class="w-full h-full object-cover hidden" />
+                            <svg xmlns="http://www.w3.org/2000/svg" class="text-gray-400" width="96" height="96"
+                                fill="currentColor" class="bi bi-card-image" viewBox="0 0 16 16">
+                                <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+                                <path
+                                    d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2zm13 1a.5.5 0 0 1 .5.5v6l-3.775-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12v.54L1 12.5v-9a.5.5 0 0 1 .5-.5z" />
+                            </svg>
+                        </label>
+                        <input type="file" id="nidFront"" accept=" image/*" class="fileInput hidden" />
                     </div>
-                    <div class="mt-4">
-                        <label class="block text-sm font-medium text-gray-700">Registration Number</label>
-                        <input type="text" placeholder="Digits"
-                            class="mt-1 w-full border rounded-lg p-2 focus:border-[#ed6140] focus:ring-1 focus:ring-[#ed6140]" />
+
+                    <div class="flex flex-col mt-4">
+                        <label class="block text-sm font-medium text-gray-700 mb-1">NID Back</label>
+                        <label for="nidBack"
+                            class="w-full rounded-lg border-2 border-dashed border-gray-500 flex justify-center items-center cursor-pointer overflow-hidden">
+                            <img class="imagePreview hidden h-[150px]" src="https://via.placeholder.com/150"
+                                alt="Preview" class="w-full h-full object-cover hidden" />
+                            <svg xmlns="http://www.w3.org/2000/svg" class="text-gray-400" width="96" height="96"
+                                fill="currentColor" class="bi bi-card-image" viewBox="0 0 16 16">
+                                <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+                                <path
+                                    d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2zm13 1a.5.5 0 0 1 .5.5v6l-3.775-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12v.54L1 12.5v-9a.5.5 0 0 1 .5-.5z" />
+                            </svg>
+                        </label>
+                        <input type="file" id="nidBack"" accept=" image/*" class="fileInput hidden" />
                     </div>
-                    <div class="mt-4">
-                        <label class="block text-sm font-medium text-gray-700">Year</label>
-                        <select
-                            class="mt-1 w-full border rounded-lg p-2 focus:border-[#ed6140] focus:ring-1 focus:ring-[#ed6140]">
-                            <option>Select year</option>
-                            <option>2024</option>
-                            <option>2023</option>
-                            <option>2022</option>
-                        </select>
+
+                    <div class="flex flex-col mt-4">
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Vehicle License Front <span
+                                class="text-red-500">*</span></label>
+                        <label for="vehicleLicenseFront"
+                            class="w-full rounded-lg border-2 border-dashed border-gray-500 flex justify-center items-center cursor-pointer overflow-hidden">
+                            <img class="imagePreview hidden h-[150px]" src="https://via.placeholder.com/150"
+                                alt="Preview" class="w-full h-full object-cover hidden" />
+                            <svg xmlns="http://www.w3.org/2000/svg" class="text-gray-400" width="96" height="96"
+                                fill="currentColor" class="bi bi-card-image" viewBox="0 0 16 16">
+                                <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+                                <path
+                                    d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2zm13 1a.5.5 0 0 1 .5.5v6l-3.775-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12v.54L1 12.5v-9a.5.5 0 0 1 .5-.5z" />
+                            </svg>
+                        </label>
+                        <input type="file" id="vehicleLicenseFront" accept="image/*" class="fileInput hidden" />
+                    </div>
+
+                    <div class="flex flex-col mt-4">
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Vehicle License Back <span
+                                class="text-red-500">*</span></label>
+                        <label for="vehicleLicenseBack"
+                            class="w-full rounded-lg border-2 border-dashed border-gray-500 flex justify-center items-center cursor-pointer overflow-hidden">
+                            <img class="imagePreview hidden h-[150px]" src="https://via.placeholder.com/150"
+                                alt="Preview" class="w-full h-full object-cover hidden" />
+                            <svg xmlns="http://www.w3.org/2000/svg" class="text-gray-400" width="96" height="96"
+                                fill="currentColor" class="bi bi-card-image" viewBox="0 0 16 16">
+                                <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+                                <path
+                                    d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2zm13 1a.5.5 0 0 1 .5.5v6l-3.775-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12v.54L1 12.5v-9a.5.5 0 0 1 .5-.5z" />
+                            </svg>
+                        </label>
+                        <input type="file" id="vehicleLicenseBack" accept="image/*" class="fileInput hidden" />
+                    </div>
+
+                    <div class="flex flex-col mt-4">
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Blue Book page 1 <span
+                                class="text-red-500">*</span></label>
+                        <label for="blueBookPage1"
+                            class="w-full rounded-lg border-2 border-dashed border-gray-500 flex justify-center items-center cursor-pointer overflow-hidden">
+                            <img class="imagePreview hidden h-[150px]" src="https://via.placeholder.com/150"
+                                alt="Preview" class="w-full h-full object-cover hidden" />
+                            <svg xmlns="http://www.w3.org/2000/svg" class="text-gray-400" width="96" height="96"
+                                fill="currentColor" class="bi bi-card-image" viewBox="0 0 16 16">
+                                <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+                                <path
+                                    d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2zm13 1a.5.5 0 0 1 .5.5v6l-3.775-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12v.54L1 12.5v-9a.5.5 0 0 1 .5-.5z" />
+                            </svg>
+                        </label>
+                        <input type="file" id="blueBookPage1"" accept=" image/*" class="fileInput hidden" />
+                    </div>
+
+                    <div class="flex flex-col mt-4">
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Blure Book page 12 <span
+                                class="text-red-500">*</span></label>
+                        <label for="blueBookPage12"
+                            class="w-full rounded-lg border-2 border-dashed border-gray-500 flex justify-center items-center cursor-pointer overflow-hidden">
+                            <img class="imagePreview hidden h-[150px]" src="https://via.placeholder.com/150"
+                                alt="Preview" class="w-full h-full object-cover hidden" />
+                            <svg xmlns="http://www.w3.org/2000/svg" class="text-gray-400" width="96" height="96"
+                                fill="currentColor" class="bi bi-card-image" viewBox="0 0 16 16">
+                                <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+                                <path
+                                    d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2zm13 1a.5.5 0 0 1 .5.5v6l-3.775-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12v.54L1 12.5v-9a.5.5 0 0 1 .5-.5z" />
+                            </svg>
+                        </label>
+                        <input type="file" id="blueBookPage12" accept="image/*" class="fileInput hidden" />
+                    </div>
+                    <div class="flex flex-col mt-4">
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Blue Book page 13 <span
+                                class="text-red-500">*</span></label>
+                        <label for="blueBookPage13"
+                            class="w-full rounded-lg border-2 border-dashed border-gray-500 flex justify-center items-center cursor-pointer overflow-hidden">
+                            <img class="imagePreview hidden h-[150px]" src="https://via.placeholder.com/150"
+                                alt="Preview" class="w-full h-full object-cover hidden" />
+                            <svg xmlns="http://www.w3.org/2000/svg" class="text-gray-400" width="96" height="96"
+                                fill="currentColor" class="bi bi-card-image" viewBox="0 0 16 16">
+                                <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+                                <path
+                                    d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2zm13 1a.5.5 0 0 1 .5.5v6l-3.775-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12v.54L1 12.5v-9a.5.5 0 0 1 .5-.5z" />
+                            </svg>
+                        </label>
+                        <input type="file" id="blueBookPage13" accept="image/*" class="fileInput hidden" />
+                    </div>
+
+                    <div class="flex flex-col mt-4">
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Vehicle Insurance <span
+                                class="text-red-500">*</span></label>
+                        <label for="vehicleInsurance"
+                            class="w-full rounded-lg border-2 border-dashed border-gray-500 flex justify-center items-center cursor-pointer overflow-hidden">
+                            <img class="imagePreview hidden h-[150px]" src="https://via.placeholder.com/150"
+                                alt="Preview" class="w-full h-full object-cover hidden" />
+                            <svg xmlns="http://www.w3.org/2000/svg" class="text-gray-400" width="96" height="96"
+                                fill="currentColor" class="bi bi-card-image" viewBox="0 0 16 16">
+                                <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+                                <path
+                                    d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2zm13 1a.5.5 0 0 1 .5.5v6l-3.775-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12v.54L1 12.5v-9a.5.5 0 0 1 .5-.5z" />
+                            </svg>
+                        </label>
+                        <input type="file" id="vehicleInsurance" accept="image/*" class="fileInput hidden" />
                     </div>
                 </div>
-            </div>
-
-        </div>
+                <div class="text-end mt-6">
+                    <button type="submit"
+                        class="bg-[#ed6140] text-white py-2 px-4 rounded-lg hover:bg-[#ed6140] transform transition duration-300 ease-in-out hover:scale-105">Submit</button>
+                </div>
+        </form>
     </section>
 
     <section class="max-w-7xl mx-auto px-6 py-12">
@@ -540,15 +845,15 @@
 
 
     <footer class="bg-[#282828] text-white py-12 px-5 md:px-20">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8
+        <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8
         ">
-            <!-- Brand Section -->
-            <div>
+            <div class="mb-8">
                 <div class="flex items-center space-x-3">
                     <img src="image/logo-white.png" alt="Zaouu Nepal" class="h-10">
                     <!-- <h2 class="text-xl font-bold">Zaouu Nepal</h2> -->
                 </div>
-                <p class=" py-3 m-3 text-gray-400">Lorem ipsum dolor sit amet consectetur. Interdum faucibus eget a amet
+                <p class=" py-3 mt-3 mb-3 text-gray-400">Lorem ipsum dolor sit amet consectetur. Interdum faucibus eget
+                    a amet
                     justo tellus magnis.</p>
                 <div class="flex space-x-4 mt-4">
                     <a href="#" class="text-white text-lg">
@@ -564,51 +869,61 @@
                 </div>
             </div>
 
-            <!-- Company Section -->
-            <div>
-                <h3 class="text-lg font-semibold mb-3">Company</h3>
-                <ul class="text-gray-400 space-y-2">
-                    <li class="transform transition duration-300 ease-in-out hover:scale-105"><a href="#"
-                            class="hover:text-[#ed6140] font-semibold">Home</a></li>
-                    <li class="transform transition duration-300 ease-in-out hover:scale-105"><a href="#"
-                            class="hover:text-[#ed6140] font-semibold">Services</a></li>
-                    <li class="transform transition duration-300 ease-in-out hover:scale-105"><a href="#"
-                            class="hover:text-[#ed6140] font-semibold">Merchants</a></li>
-                    <li class="transform transition duration-300 ease-in-out hover:scale-105"><a href="#"
-                            class="hover:text-[#ed6140] font-semibold">Blogs</a></li>
-                </ul>
-            </div>
+            <div class="flex flex-col sm:flex-row justify-around items-start flex-wrap gap-6">
+                <!-- Company Section -->
+                <div class="w-full sm:w-auto">
+                    <h3 class="text-lg font-semibold mb-3">Company</h3>
+                    <ul class="text-gray-400 space-y-2">
+                        <li class="transform transition duration-300 ease-in-out hover:scale-105">
+                            <a href="#" class="hover:text-[#ed6140] font-semibold">Home</a>
+                        </li>
+                        <li class="transform transition duration-300 ease-in-out hover:scale-105">
+                            <a href="#" class="hover:text-[#ed6140] font-semibold">Services</a>
+                        </li>
+                        <li class="transform transition duration-300 ease-in-out hover:scale-105">
+                            <a href="#" class="hover:text-[#ed6140] font-semibold">Merchants</a>
+                        </li>
+                        <li class="transform transition duration-300 ease-in-out hover:scale-105">
+                            <a href="#" class="hover:text-[#ed6140] font-semibold">Blogs</a>
+                        </li>
+                    </ul>
+                </div>
 
-            <!-- Contact Section -->
-            <div>
-                <h3 class="text-lg font-semibold mb-3">Contact</h3>
-                <ul class="text-gray-400 space-y-2">
-                    <li class="transform transition duration-300 ease-in-out hover:scale-105"><a
-                            href="tel:+977-0000000000" class="hover:text-[#ed6140] font-semibold">+977-0000000000</a>
-                    </li>
-                    <li class="transform transition duration-300 ease-in-out hover:scale-105"><a
-                            href="mailto:demo@gmail.com">demo@gmail.com</a>
-                </ul>
-            </div>
-
-            <!-- Newsletter Section -->
-            <div class="w-full max-w-md mx-auto">
-                <h3 class="text-lg md:text-xl font-semibold mb-3 md:text-left">Get latest Information</h3>
-                <div class="flex items-center bg-[#666666] rounded-md">
-                    <input type="email" placeholder="Email-id"
-                        class="h-[50px] bg-transparent outline-none border-none flex-1 p-2 text-white placeholder-gray-400 focus:border-[#ed6140] focus:ring-1 focus:ring-[#ed6140] focus:rounded-l-md" />
-                    <button class="bg-[#ed6140] flex justify-center items-center px-3 py-2 rounded-r-md text-white">
-
-                        <svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="16px"
-                            fill="#e8eaed">
-                            <path
-                                d="M120-160v-640l760 320-760 320Zm80-120 474-200-474-200v140l240 60-240 60v140Zm0 0v-400 400Z" />
-                        </svg>
-                    </button>
+                <!-- Contact Section -->
+                <div class="w-full sm:w-auto mb-8">
+                    <h3 class="text-lg font-semibold mb-3">Contact</h3>
+                    <ul class="text-gray-400 space-y-2">
+                        <li class="transform transition duration-300 ease-in-out hover:scale-105">
+                            <a href="tel:+977-0000000000" class="hover:text-[#ed6140] font-semibold">+977-0000000000</a>
+                        </li>
+                        <li class="transform transition duration-300 ease-in-out hover:scale-105">
+                            <a href="mailto:demo@gmail.com"
+                                class="hover:text-[#ed6140] font-semibold">demo@gmail.com</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
+            <!-- Newsletter Section -->
+            <div>
+                <h3 class="text-lg font-semibold mb-3">Get latest Information</h3>
+                <div class="flex items-center bg-[#666666] rounded-md">
+                    <input type="email" placeholder="Email-id"
+                        class="bg-transparent w-[200px] outline-none border border-transparent border-r-0 flex-1 p-2 text-white placeholder-gray-400 focus:border-[#ed6140] focus:ring-1 focus:ring-[#ed6140] focus:rounded-l-md">
+                    <button class="bg-[#ed6140] px-4 py-1 rounded-r-md text-white text-lg">
 
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="transition-transform duration-300 hover:scale-110" height="36px"
+                            viewBox="0 -960 960 960" width="26px" fill="#e8eaed">
+                            <path
+                                d="M120-160v-640l760 320-760 320Zm80-120 474-200-474-200v140l240 60-240 60v140Zm0 0v-400 400Z" />
+                        </svg>
+
+                        <!-- <img src="icon/send.svg" alt="" class="transition-transform duration-300 hover:scale-110"> -->
+                    </button>
+
+                </div>
+            </div>
         </div>
 
         <!-- Bottom Footer -->
@@ -618,7 +933,33 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
-    <script src="js/script.js"></script>
+
+    <script>
+        // Update the selector to specifically target the label for the profile image
+        document.querySelectorAll(".fileInput").forEach(input => {
+            input.addEventListener("change", function (event) {
+                const file = event.target.files[0];
+                if (file) {
+                    const label = event.target.previousElementSibling; // Access the label (not previous sibling label)
+                    const previewImage = label.querySelector(".imagePreview");
+                    const icon = label.querySelector("svg");
+
+                    if (previewImage) {
+                        const reader = new FileReader();
+                        reader.onload = function (e) {
+                            // Set the image source to the uploaded file
+                            previewImage.src = e.target.result;
+                            // Show the image preview
+                            previewImage.classList.remove("hidden");
+                            // Hide the icon
+                            icon.classList.add("hidden");
+                        };
+                        reader.readAsDataURL(file);
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 
 

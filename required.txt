@@ -1,16 +1,21 @@
-postal address
-postal cdoe
-service area *
-service shift (night day) *
-nid image front *
-nid image back
-VL (front back)*
-blue book(page 1, 12, 13) *
-VL/blue book exipiry date *
-v photo 1 pic *
-VI *
-VI exp date *
+postal address---------
+postal cdoe-------
+service area * ------
+service shift (night day) *---------
+nid image front * -------
+nid image back ---------
+VL (front back)* ------
+blue book(page 1, 12, 13) * -------
+VL/blue book exipiry date *-------
+v photo 1 pic * -------
+VI * --------------
+VI exp date * -------
 
-scroll button in Testimonials
-icon in nav
-link on blog section
+scroll button in Testimonials -----
+icon in nav--------
+link on blog section -------
+
+
+stteper form
+blog page
+single blog page
